@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+</head>
+<body>
+    <form action="test" method="get">   
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username"/>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password"/>
+
+        <label for="comments"> Comments: </label>
+        <textarea id="comments" name="comments" cols="20" rows="5">
+            Enter your comments...
+        </textarea>
+        <hr>
+        <input type="text" placeholder="Search..."/>
+        <hr>
+        <label for="phone">Phone number: </label>
+        <input type="text" name="phone" id="phone" placeholder="+389 7x xxx xxx"/>
+            <hr>
+
+        <p>Please select your favourite music genre: </p>
+
+        <input type="radio" name="genre" id="rock" value="rock"/>
+            <label for="rock"> Rock</label>
+
+        <input type="radio" name="genre" id="pop" value="pop"/>
+            <label for="pop"> Pop</label>
+
+        <input type="radio" name="genre" id="jazz" value="jazz"/>
+            <label for="jazz"> Jazz</label>
+
+            <!-- Radio buttons name e sekad ist, ako staime
+             deka e different, site ke se selektiraat, ako e ist
+             ke se selektira samo edno -->
+        <hr>
+
+        <p>Please select your favourite music service</p>
+
+        <input type="checkbox" name="service" id="itunes" value="itunes" checked="true"/>
+        <label for="itunes"> Itunes</label>
+   <input type="checkbox" name="service" id="spotify" value="spotify" />
+        <label for="spotify"> Spotify</label>
+
+    </form>
+</body>
+</html>
