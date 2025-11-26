@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drop Down - Select list box</title>
+</head>
+<body>
+    <form> 
+        <!-- Single choice drop down -->
+        <label for="devices">What device do you listen music on?</label>
+        <select name="devices" id="devices">
+            <option selected disabled>Select an option</option>
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+        <br>
+        <br>
+        <!-- Multi choice drop down - isto ko single samo tuka ima multiple i size -->
+        <label for="instruments">Do you play any of the instruments?</label>
+        <select name="instruments" id="instruments" multiple="multiple" size="3">
+            <option value="guitar" selected> Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="bass">Bass</option>
+       
+        </select>
+        <br>
+        <br>
+
+        <label for="user-song">Upload your song in mp3 format:</label>
+        <input type="file" name="user-song" id="user-song"/>
+
+        <br>
+        <br>
+        <!-- Email,password - reset and login buttons -->
+        <form action="" method="post">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"/>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"/>
+            <hr>
+            <input type="submit" value="Login"/>
+            <input type="reset" value="Reset form"/>
+        </form>
+
+        <br>
+        <!-- Button tag -->
+        <form>
+            <input type="button" value="Im a button"/>
+            <button type="button">
+                <img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-yellow-small-button-icon-free-illustration-image_1331095.jpg" 
+                height="15px" width="15px"/>
+                Im a button </button>
+
+                <input type="hidden" name="hidden" id="hidden" value="12345"/>
+        </form>
+
+    </form>
+
+
+</body>
+</html>
