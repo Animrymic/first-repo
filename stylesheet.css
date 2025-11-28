@@ -17,7 +17,7 @@ p {
 /* class selector */
 
 .yellow-background {
-    background-color: yellow;
+    background-color: yellow !important;
 }
 
 .blue-text {
@@ -57,3 +57,31 @@ h1 + span {
 h1 ~ ul { 
     background-color: yellowgreen;
 }
+
+.red-background {
+    background-color: red;
+}
+
+/* RGB color */
+
+.rgb-bg-color {
+    background-color: rgb(167, 23, 44);
+}
+
+.rgb-bg-color {
+    background-color: rgb(167, 23, 44, 0.3);
+}
+
+/* Hex color */
+
+.hex-bg-color {
+    background-color: #ee3e80;
+}
+
+/* HSL color */
+
+.hsl-text-color {
+        color: hsl (0%, 0%, 78%);
+        background-color: hsla (0%, 40%, 45%, 0.3);
+}
+
